@@ -16,9 +16,7 @@ def predict_status(ctry,itmtp,aplcn,wth,prdrf,qtlg,cstlg,tknslg,slgplg,itmdt,itm
     dydd= int(deldtdy)
     dydm= int(deldtmn)
     dydy= int(deldtyr)
-    #modelfile of the classification
-    with open("C:/Users/Dell/JupyterPythoncodes/Classification_model.pkl","rb") as f:
-        model_class=pickle.load(f)
+   
 
     user_data= np.array([[ctry,itmtp,aplcn,wth,prdrf,qtlg,cstlg,tknslg,
                        slgplg,itdd,itdm,itdy,dydd,dydm,dydy]])
